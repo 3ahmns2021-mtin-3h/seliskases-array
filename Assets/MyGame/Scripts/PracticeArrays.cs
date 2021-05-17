@@ -11,7 +11,7 @@ public class PracticeArrays : MonoBehaviour
     [SerializeField]
     private GameObject[] arrayColorImagesRed;
 
-    private void Start()
+    public void Start()
     {
         arrayColorImagesRed = GameObject.FindGameObjectsWithTag("RedImage");    
 
@@ -19,6 +19,18 @@ public class PracticeArrays : MonoBehaviour
         {
             array4[i] = "array4";
         }
+
+        Debug.Log("Element 0 von array 1 hat den Wert: " + array1[0]);
+        Debug.Log("Element 0 von array 2 hat den Wert: " + array2[0]);
+        Debug.Log("Element 0 von array 3 hat den Wert: " + array3[0]);
+        Debug.Log("Element 0 von array 4 hat den Wert: " + array4[0]);
+        Debug.Log("Name des ersten GameObjects: " + arrayColorImagesRed[0].name);
+
+        Debug.Log("Das letzte Element von array 1 hat den Wert: " + array1[array1.Length - 1]);
+        Debug.Log("Das letzte Element  von array 2 hat den Wert: " + array2[array2.Length - 1]);
+        Debug.Log("Das letzte Element  von array 3 hat den Wert: " + array3[array3.Length - 1]);
+        Debug.Log("Das letzte Element  von array 4 hat den Wert: " + array4[array4.Length - 1]);
+        Debug.Log("Name des letzten GameObjects: " + arrayColorImagesRed[arrayColorImagesRed.Length - 1].name);
     }
 }
         
