@@ -31,6 +31,16 @@ public class PracticeArrays : MonoBehaviour
         Debug.Log("Das letzte Element  von array 3 hat den Wert: " + array3[array3.Length - 1]);
         Debug.Log("Das letzte Element  von array 4 hat den Wert: " + array4[array4.Length - 1]);
         Debug.Log("Name des letzten GameObjects: " + arrayColorImagesRed[arrayColorImagesRed.Length - 1].name);
+
+        PrintElements(array4);
+    }
+
+    private void PrintElements(string[] stringArray)
+    {
+        for (int i = 0; i < stringArray.Length; i++)
+        {
+            Debug.Log("Element Nummer: " + i + " hat den Wert " + stringArray[i]);
+        }
     }
 }
         
